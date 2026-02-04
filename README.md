@@ -18,13 +18,13 @@ Create a new project using this template:
 
 ```bash
 # Using npx
-npx create-expo-app@latest my-app --template https://github.com/sanketpipaliya208/expo_boilerplat_uniwind_heroui
+npx create-expo-app@latest --template https://github.com/sanketpipaliya208/expo_boilerplat_uniwind_heroui
 
 # Using yarn
-yarn create expo-app my-app --template https://github.com/sanketpipaliya208/expo_boilerplat_uniwind_heroui
+yarn create expo-app --template https://github.com/sanketpipaliya208/expo_boilerplat_uniwind_heroui
 
 # Using bun
-bun create expo my-app --template https://github.com/sanketpipaliya208/expo_boilerplat_uniwind_heroui
+bun create expo --template https://github.com/sanketpipaliya208/expo_boilerplat_uniwind_heroui
 ```
 
 ## 🚀 Get Started
