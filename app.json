@@ -2,6 +2,7 @@
   "expo": {
     "name": "expo_boilerplat_uniwind_heroui",
     "slug": "expo_boilerplat_uniwind_heroui",
+    "scheme": "example",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
