@@ -4,9 +4,9 @@ import { FieldError } from "heroui-native/field-error";
 import { InputGroup, InputGroupInputProps } from "heroui-native/input-group";
 import { Label } from "heroui-native/label";
 import { TextField } from "heroui-native/text-field";
-import { cn } from "heroui-native/utils";
 import { PropsWithChildren } from "react";
 import { FadeInUp } from "react-native-reanimated";
+import { cn } from "tailwind-variants";
 
 const { useFieldContext } = createFormHookContexts();
 
@@ -31,7 +31,7 @@ export default function FormInput({
           <Label.Text>{label}</Label.Text>
         </Label>
       )}
-      <InputGroup className="relative">
+      <InputGroup>
         <InputGroup.Input
           placeholder={label}
           value={field.state.value}

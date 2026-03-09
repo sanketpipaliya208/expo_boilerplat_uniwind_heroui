@@ -1,10 +1,9 @@
 import { useLoadingAsync } from "@hooks/loading.async";
 import { Button, ButtonRootProps } from "heroui-native/button";
 import { Spinner } from "heroui-native/spinner";
-import { PropsWithChildren } from "react";
 import { FadeIn } from "react-native-reanimated";
 
-export type ActionButtonProps = PropsWithChildren<ButtonRootProps> & {
+export type ActionButtonProps = ButtonRootProps & {
   isLoading?: boolean;
   isSubmitting?: boolean;
   action?: () => Promise<void>;

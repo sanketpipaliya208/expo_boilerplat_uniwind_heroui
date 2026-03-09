@@ -3,7 +3,7 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "global.css": ["./global.css"],
+      "@global.css": ["./src/theme/global.css"],
 
       "@assets/*": ["./assets/*"],
       "@types/*": ["./src/types/*"],

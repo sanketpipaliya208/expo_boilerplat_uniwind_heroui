@@ -90,17 +90,15 @@ export default function SignInPage() {
       </Form.AppField>
 
       <Button variant="ghost" className="self-end -mx-3">
-        <Button.Label>Forgot Password?</Button.Label>
+        Forgot Password?
       </Button>
 
       <Form.AppForm>
-        <FormButton>
-          <Button.Label>Sign In</Button.Label>
-        </FormButton>
+        <FormButton>Sign In</FormButton>
       </Form.AppForm>
 
       <Button variant="ghost" className="self-center">
-        <Button.Label>Don't have an account? Sign Up</Button.Label>
+        Don't have an account? Sign Up
       </Button>
     </ScrollView>
   );
