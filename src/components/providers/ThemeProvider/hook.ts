@@ -1,5 +1,5 @@
 import { DarkTheme, DefaultTheme, Theme } from "@react-navigation/native";
-import { useThemeColor } from "heroui-native";
+import { useThemeColor } from "heroui-native/hooks";
 import { useUniwind } from "uniwind";
 
 export const useTheme = (): Theme => {
