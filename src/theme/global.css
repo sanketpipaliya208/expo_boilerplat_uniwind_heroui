@@ -11,6 +11,9 @@
  */
 @source '../../node_modules/heroui-native/lib';
 
+@source '../screens';
+@source '../components';
+
 @import "./theme.css";
 
 :root {

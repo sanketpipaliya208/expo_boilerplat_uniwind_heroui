@@ -1,3 +1,5 @@
+import "@theme/global.css";
+
 import { Tabs } from "expo-router";
 import React from "react";
 

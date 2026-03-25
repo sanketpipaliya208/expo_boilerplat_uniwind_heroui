@@ -3,14 +3,13 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@global.css": ["./src/theme/global.css"],
-
       "@assets/*": ["./assets/*"],
       "@types/*": ["./src/types/*"],
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@screens/*": ["./src/screens/*"],
       "@services/*": ["./src/services/*"],
+      "@theme/*": ["./src/theme/*"],
       "@utils/*": ["./src/utils/*"]
     }
   },
