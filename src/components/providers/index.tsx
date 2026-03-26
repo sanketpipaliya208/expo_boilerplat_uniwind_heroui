@@ -2,6 +2,7 @@ import {
   HeroUINativeConfig,
   HeroUINativeProvider,
 } from "heroui-native/provider";
+import React from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { KeyboardProvider } from "react-native-keyboard-controller";
 import ThemeProviderComponent from "./ThemeProvider";
@@ -16,7 +17,7 @@ const config: HeroUINativeConfig = {
   },
 };
 
-export default function AppProvider({ children }: Readonly<AppProviderProps>) {
+const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   return (
     <GestureHandlerRootView>
       <KeyboardProvider>
@@ -26,4 +27,6 @@ export default function AppProvider({ children }: Readonly<AppProviderProps>) {
       </KeyboardProvider>
     </GestureHandlerRootView>
   );
-}
+};
+
+export default AppProvider;

@@ -1,14 +1,17 @@
 import { ThemeProvider } from "@react-navigation/native";
+import React from "react";
 import { useTheme } from "./hook";
 
 type ThemeProviderComponentProps = {
   children: React.ReactNode;
 };
 
-export default function ThemeProviderComponent({
+const ThemeProviderComponent: React.FC<ThemeProviderComponentProps> = ({
   children,
-}: Readonly<ThemeProviderComponentProps>) {
+}) => {
   const theme = useTheme();
 
   return <ThemeProvider value={theme}>{children}</ThemeProvider>;
-}
+};
+
+export default ThemeProviderComponent;

@@ -16,7 +16,7 @@ const validationSchema = object({
   password: string().nonempty("Field is required"),
 });
 
-export default function SignInPage() {
+const SignInPage: React.FC = () => {
   const signIn = useAuthManage((state) => state.signIn);
   const { toast } = useToast();
 
@@ -102,4 +102,6 @@ export default function SignInPage() {
       </Button>
     </ScrollView>
   );
-}
+};
+
+export default SignInPage;

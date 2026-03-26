@@ -1,8 +1,9 @@
 import useAuthManage from "@services/zustand/auth.zustand";
 import { Button } from "heroui-native/button";
+import React from "react";
 import { View } from "react-native";
 
-export default function ExploreScreen() {
+const ExploreScreen: React.FC = () => {
   const signOut = useAuthManage((state) => state.signOut);
 
   return (
@@ -10,4 +11,6 @@ export default function ExploreScreen() {
       <Button onPress={() => signOut()}>LogOut</Button>
     </View>
   );
-}
+};
+
+export default ExploreScreen;

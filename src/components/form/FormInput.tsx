@@ -4,7 +4,7 @@ import { FieldError } from "heroui-native/field-error";
 import { InputGroup, InputGroupInputProps } from "heroui-native/input-group";
 import { Label } from "heroui-native/label";
 import { TextField } from "heroui-native/text-field";
-import { PropsWithChildren } from "react";
+import React, { PropsWithChildren } from "react";
 import { FadeInUp } from "react-native-reanimated";
 import { cn } from "tailwind-variants";
 
@@ -15,13 +15,13 @@ interface FormInputProps extends PropsWithChildren<InputGroupInputProps> {
   description?: string;
 }
 
-export default function FormInput({
+const FormInput: React.FC<FormInputProps> = ({
   label,
   description,
   className,
   children,
   ...inputProps
-}: Readonly<FormInputProps>) {
+}) => {
   const field = useFieldContext<string>();
 
   return (
@@ -60,4 +60,6 @@ export default function FormInput({
       {description && <Description>{description}</Description>}
     </TextField>
   );
-}
+};
+
+export default FormInput;
