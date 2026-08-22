@@ -1,4 +1,4 @@
-import { useLoadingAsync } from "@hooks/loading.async";
+import { useLoadingAsync } from "@/hooks/loading.async";
 import { Button, ButtonRootProps } from "heroui-native/button";
 import { Spinner } from "heroui-native/spinner";
 import { FadeIn } from "react-native-reanimated";

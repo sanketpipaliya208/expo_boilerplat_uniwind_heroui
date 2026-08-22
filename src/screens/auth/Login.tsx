@@ -1,9 +1,9 @@
-import { SIonicons } from "@components/common/Icons";
-import FormButton from "@components/form/FormButton";
-import FormInput from "@components/form/FormInput";
-import useAppForm from "@hooks/form.hook";
-import useAuthManage from "@services/zustand/auth.zustand";
-import { sleep } from "@utils/helper";
+import { SIonicons } from "@/components/common/Icons";
+import FormButton from "@/components/form/FormButton";
+import FormInput from "@/components/form/FormInput";
+import useAppForm from "@/hooks/form.hook";
+import useAuthManage from "@/services/zustand/auth.zustand";
+import { sleep } from "@/utils/helper";
 import { Button } from "heroui-native/button";
 import { InputGroup } from "heroui-native/input-group";
 import { useToast } from "heroui-native/toast";

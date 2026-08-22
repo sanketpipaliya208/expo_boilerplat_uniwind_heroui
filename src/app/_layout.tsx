@@ -1,5 +1,7 @@
-import AppProvider from "@components/providers";
-import useAuthManage from "@services/zustand/auth.zustand";
+import "../global.css";
+
+import AppProvider from "@/components/providers";
+import useAuthManage from "@/services/zustand/auth.zustand";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";

@@ -1,4 +1,4 @@
-import useAuthManage from "@services/zustand/auth.zustand";
+import useAuthManage from "@/services/zustand/auth.zustand";
 import { Button } from "heroui-native/button";
 import React from "react";
 import { View } from "react-native";
