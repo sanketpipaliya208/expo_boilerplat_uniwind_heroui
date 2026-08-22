@@ -1,7 +1,6 @@
 import "../global.css";
 
 import AppProvider from "@/components/providers";
-import useAuthManage from "@/services/zustand/auth.zustand";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
@@ -25,18 +24,11 @@ SplashScreen.setOptions({
 });
 
 function AppLayout() {
-  const isLogin = useAuthManage((state) => state.isLogin);
-
   return (
     <>
       <StatusBar animated />
       <Stack>
-        <Stack.Protected guard={!isLogin}>
-          <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-        </Stack.Protected>
-        <Stack.Protected guard={isLogin}>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        </Stack.Protected>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
     </>
   );

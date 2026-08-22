@@ -17,13 +17,14 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   ...props
 }) => {
   const [isPending, handlePress] = useLoadingAsync(action);
+  const busy = isPending || isLoading || isSubmitting;
 
   return (
     <Button
       onPress={handlePress}
-      isDisabled={isPending || isLoading || isSubmitting}
+      isDisabled={busy}
       {...props}>
-      {isPending || isLoading || isSubmitting ? (
+      {busy ? (
         <>
           <Spinner entering={FadeIn.delay(50)} size="sm" color="white" />
           {!props.isIconOnly && children}

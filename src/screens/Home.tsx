@@ -6,7 +6,7 @@ const HomeScreen: React.FC = () => {
   return (
     <View className="flex-1 items-center justify-center">
       <Link href="/explore">
-        <Text className="text-demo">Home</Text>
+        <Text>Home</Text>
       </Link>
     </View>
   );

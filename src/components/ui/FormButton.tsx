@@ -1,6 +1,6 @@
 import { createFormHookContexts } from "@tanstack/react-form";
 import React from "react";
-import ActionButton, { ActionButtonProps } from "../common/ActionButton";
+import ActionButton, { ActionButtonProps } from "./ActionButton";
 
 const { useFormContext } = createFormHookContexts();
 
